@@ -5,7 +5,13 @@ import { PrivyProvider } from '@privy-io/react-auth';
 export function PrivyCitreaWrapper({ children }: { children: React.ReactNode }) {
   return (
     <PrivyProvider
-      appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID} // Set this in .env.local
+      appId={(function() {
+        const privyAppId = process.env.NEXT_PUBLIC_PRIVY_APP_ID;
+        if (!privyAppId) {
+          throw new Error('NEXT_PUBLIC_PRIVY_APP_ID is not set in environment variables');
+        }
+        return privyAppId;
+      })()} // Set this in .env.local
       config={{
         loginMethods: ['email', 'wallet'],
         appearance: {
