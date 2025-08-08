@@ -1,0 +1,39 @@
+{
+  "name": "citrea-slingers",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next out",
+    "deploy": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@privy-io/react-auth": "^2.21.0",
+    "@wagmi/connectors": "^5.9.1",
+    "@wagmi/core": "^2.18.1",
+    "next": "15.4.5",
+    "privy": "^0.4.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "viem": "^2.33.2",
+    "wagmi": "^2.16.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.5",
+    "ethers": "^5.8.0",
+    "hardhat": "^2.26.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
