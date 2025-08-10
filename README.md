@@ -1,4 +1,5 @@
 # 🎯 Goblin Tap - Citrea Blockchain Game
+<img width="1584" height="396" alt="GOBLIN-TAP-modified" src="https://github.com/user-attachments/assets/ab9ff9ba-ef88-4334-b51d-40eb94837068" />
 
 
 A fast-paced, skill-based game built on the Citrea blockchain where players bet cBTC on their ability to quickly tap goblins as they pop up from holes within a time limit. The more goblins you tap, the bigger the reward!
